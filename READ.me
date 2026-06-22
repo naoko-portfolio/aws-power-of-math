@@ -1,0 +1,72 @@
+# AWS Serverless Web App Practice
+
+Power of Math
+
+## Project Overview
+This project is a simple serverless web applocation built on AWS.
+The application calculate the power of a numberand stores the result in Amazon DynamoDB.
+
+## Aechitecture
+User -> AWS Amplify -> API Gateway -> AWS Lambda -> Amazon DynamoDB
+
+
+
+
+## AWS Services Used
+- AWS Amplify
+- Amazon API Gateway
+- AWS Lambda
+- Amazon DynamoDB
+- AWS IAM
+
+---
+
+## Step 1 - Create Amplify App
+
+I created a frontend application using AWS Amplify.
+
+[スクリーンショット]
+
+What I learned:
+- Amplify can host static web applications.
+- Deployment is automated.
+
+---
+
+## Step 2 - Create Lambda Function
+
+I created a Lambda function to process math calculations.
+
+[スクリーンショット]
+
+What I learned:
+- Lambda runs code without managing servers.
+- Functions can be triggered by API Gateway.
+
+---
+
+## Step 3 - Configure API Gateway
+
+[スクリーンショット]
+
+What I learned:
+- API Gateway receives requests from the frontend.
+- It forwards requests to Lambda.
+
+---
+
+## Step 4 - Connect DynamoDB
+
+[スクリーンショット]
+
+What I learned:
+- DynamoDB stores application data.
+
+Why should I not use a storage like S3?
+Storages are good for a bid data such as photos, movies or PDF ect. And they save like a file and not oganaized. Whereas saving database,
+the data is ognaized and saved like a table. So it's good for data. This time I wanted to save answers and take it out. So I used daynamoDB instead of a storage.
+
+## Challenges
+
+I encountered an AccessDeniedException when Lambda attempted to write data to DynamoDB.
+### Solution
