@@ -121,7 +121,7 @@ This project demonstrated an end-to-end serverless AWS application.
 
 ## Came up questions
 
-###Why use DynamoDB instead of Amazon S3?
+### Why use DynamoDB instead of Amazon S3?
 S3 is designed to store files such as images, videos, and documents.
 DynamoDB is designed to store structured data and allows fast retrieval of records.
 For this project, DynamoDB was a better choice because I wanted to store and retrieve calculation results.
