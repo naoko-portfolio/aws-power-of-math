@@ -3,10 +3,10 @@
 Power of Math
 
 ## Project Overview
-This project is a simple serverless web applocation built on AWS.
-The application calculate the power of a numberand stores the result in Amazon DynamoDB.
+This project is a simple serverless web application built on AWS.
+The application calculates the power of a number and stores the result in Amazon DynamoDB.
 
-## Aechitecture
+## Architecture
 User -> AWS Amplify -> API Gateway -> AWS Lambda -> Amazon DynamoDB
 
 <img width="999" height="589" alt="AWS" src="https://github.com/user-attachments/assets/742fa264-1226-4dc9-b758-7003de5c7afe" />
@@ -24,7 +24,7 @@ User -> AWS Amplify -> API Gateway -> AWS Lambda -> Amazon DynamoDB
 ## Step 1 - Create Amplify App
 
 I created a basic frontend application using AWS Amplify.
-I wrote the code, zipped the files, and uploaded them to AWS amplify for deployment. The initial result was a simple web page.
+I wrote the code, zipped the files, and uploaded them to AWS Amplify for deployment. The initial result was a simple web page.
 
 <img width="1875" height="850" alt="aws1" src="https://github.com/user-attachments/assets/2580fe7a-2037-422d-9898-e8871b31fc22" />
 
@@ -32,7 +32,7 @@ I wrote the code, zipped the files, and uploaded them to AWS amplify for deploym
 
 
 ### What I learned:
-- Amplify can host static web applications.
+- Amplify can host static web application.
 - Deployment is automated.
 
 ---
@@ -53,7 +53,7 @@ I implemented Python code, tested the function, and deployed it successfully.
 
 ## Step 3 - Configure API Gateway
 I created an API Gateway endpoint and connected it to the Lambda function.
-API Gateway receives requests from the wab application and forwards them to Lambda for processing.
+API Gateway receives requests from the wab web application and forwards them to Lambda for processing.
 
 <img width="1876" height="795" alt="aws5" src="https://github.com/user-attachments/assets/dbd3008f-b553-4bec-afad-ed3fb5737472" />
 
@@ -83,7 +83,7 @@ I modified the Lambda function code to calculate the result and write it to Dyna
 
 ---
 ## Step 5 - Connect DynamoDB
-I modified the Lambda function code to perform calculations and store the resultts in DynamoDB.
+I modified the Lambda function code to perform calculations and store the results in DynamoDB.
 After testing the application, I confirmed that the calculation results were successfully stored in DynamoDB.
 
 <img width="1075" height="508" alt="aws9" src="https://github.com/user-attachments/assets/2c05be30-4e30-47c7-a6cf-bcabb19f1a7f" />
@@ -119,7 +119,7 @@ This project demonstrated an end-to-end serverless AWS application.
 <img width="744" height="182" alt="aws13" src="https://github.com/user-attachments/assets/a676f016-b70a-4f6e-8fc5-2661b540feaf" />
 
 
-## Came up questions
+## Questions I had
 
 ### Why use DynamoDB instead of Amazon S3?
 S3 is designed to store files such as images, videos, and documents.
